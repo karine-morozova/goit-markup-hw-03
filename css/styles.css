@@ -175,6 +175,7 @@ background-color: #757575;
 /* Worker section */
 .worker {
     background-color: darkcyan;
+}
     
 .worker.link {
     display: inline-block;
@@ -204,8 +205,20 @@ color: var(--primary-text-color);
 .footer {
     background-color: violet;
 }
+.flex {
+    display: flex;
+    
+}
+.address-item {
+    margin-bottom: 46px;
+    margin-right: 179px;
+}
+.social {
+    margin-bottom: 46px;
+    margin-right: 100px;
+}
  
-.footer-logo { 
+ .footer-logo { 
     font-family: Raleway;
     color: var(--primary-title-color);
 
@@ -216,9 +229,17 @@ text-decoration: none;
 
 
 }
+.footer-logo.link {
+    display: inline-block;
+    margin-bottom: 10px;
+}
 
 .footer-logo span {
     color: var(--accent-color);
+} 
+.address-text {
+    display: inline-block;
+    margin-bottom: 9px;
 }
 .address {
 font-size: 14px;
@@ -227,12 +248,19 @@ color: var(--primary-white-color);
 background-color: #757575;
 }
 .address-link {
+    display: inline-block;
+    margin-bottom: 9px;
 font-size: 14px;
 line-height: 1.71;
 color: rgba(255, 255, 255, 0.6);
 background-color: #757575;
 }
+.address-link:last-child {
+    margin-bottom: 0;
+}
 .join {
+    display: inline-block;
+    margin-bottom: 21px;
 font-weight: 700;
 font-size: 14px;
 line-height: 1.14;
@@ -240,7 +268,18 @@ text-transform: uppercase;
 color: var(--primary-white-color);
 background-color: #757575;
 }
+.social-list {
+    display: flex;
+}
+.social-item {
+    margin-right: 10px;
+}
+.social-item:last-child {
+    margin-right: 0;
+}
 .footer-text {
+    margin-top: 0;
+    margin-bottom: 0;
     font-size: 12px;
 line-height: 2;
 text-align: center;
@@ -257,11 +296,22 @@ background-color: #757575;
 /* PORTFOLIO */
 /* Portfolio filters */
 .header.portfolio {
-    background-color: darkorange;
     margin-bottom: 94px;
 }
   .btn {  
+    
     margin-bottom: 34px;
+}
+.button-list {
+    display: flex;
+    justify-content: center;
+    
+}
+.btn-item {
+    margin-right: 8px;
+}
+.btn-item:last-child {
+    margin-right: 0;
 }
 
 .button {
@@ -279,10 +329,27 @@ font-size: 16px;
 line-height: 1.62;
 text-align: center;
 }
+
 .button:hover, .button:focus {
     color: var(--accent-color);
 }
 /* Portfolio examples  */
+
+.example.list {
+    display: flex;
+    flex-wrap: wrap;
+}
+.example-item {
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+.example-item:nth-child(3n) {
+    margin-right: 0;
+}
+.example-item:nth-last-child(-n+3) {
+    margin-bottom: 0;
+}
+
 .portfolio-link {
     display: inline-block;
     margin-bottom: 20px;
