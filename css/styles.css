@@ -35,13 +35,11 @@ body {
     padding-right: 15px;
     margin-right: auto;
     margin-left: auto;
-    outline: 1px solid black;
+    
     
 }
 /* Header */
-.header {
-    background-color: aqua;
-}
+
 .main-nav {
     display: flex;
     align-items: center;
@@ -121,7 +119,6 @@ text-decoration: none;
 /* Hero */
 .hero {
     text-align: center;
-    background-color: aquamarine;
     margin-bottom: 94px; 
 }
 .hero .title {
@@ -153,10 +150,17 @@ text-decoration: none;
 
 }
 /* Feature section */
-.section.features {
-    background-color: blueviolet;
-    
+
+.features {
+    display: flex;
 }
+.feature-item {
+    margin-right: 30px;
+}
+.feature-item:last-child {
+    margin-right: 0;
+}
+
 .section-title {
     margin-top: 0;
     margin-bottom: 50px;
@@ -187,10 +191,12 @@ color: var(--primary-text-color);
 
 }
 /* Work section */
-.work {
-    
-    background-color: brown;
+
+.work.list {
+    display: flex;
+    justify-content: space-between
 }
+
 .work-title {
     margin-top: 0;
     margin-bottom: 0;
@@ -203,8 +209,15 @@ color: var(--primary-white-color);
 background-color: #757575;
 }
 /* Worker section */
-.worker {
-    background-color: darkcyan;
+
+.worker.list {
+    display: flex;
+}
+.worker-item {
+    margin-right: 30px;
+}
+.worker-item:last-child {
+    margin-right: 0;
 }
     
 .worker.link {
@@ -226,15 +239,21 @@ font-size: 16px;
 line-height: 1.18;
 color: var(--primary-text-color);
 }
-.clients {
-    background-color: tomato;
+/* Clients section */
+
+.users.list {
+    display: flex;
+}
+.user-item {
+    margin-right: 30px;
+}
+.user-item:last-child {
+    margin-right: 0;
 }
 
 
 /* Footer */
-.footer {
-    background-color: violet;
-}
+
 .flex {
     display: flex;
     
