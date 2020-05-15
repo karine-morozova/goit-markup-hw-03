@@ -198,13 +198,25 @@ color: var(--primary-text-color);
 .clients {
     background-color: tomato;
 }
+.footer {
+    background-color: violet;
+}
+.footer-logo { 
+    font-family: Raleway;
+    color: var(--primary-title-color);
 
+font-weight: 700;
+font-size: 22px;
+line-height: 1.18;
+text-decoration: none;
+}
 
-
-
-
+.footer-logo span {
+    color: var(--accent-color);
+}
 /* Footer */
-.footer-logo {
+/*  
+.footer-logo { 
     font-family: Raleway;
     color: var(--primary-title-color);
 
@@ -215,6 +227,7 @@ text-decoration: none;
 
 
 }
+
 .footer-logo span {
     color: var(--accent-color);
 }
@@ -246,6 +259,12 @@ text-align: center;
 color: rgba(255, 255, 255, 0.4);
 background-color: #757575;
 }
+
+*/
+
+
+
+
 /* PORTFOLIO */
 /* Portfolio filters */
 .header.portfolio {
