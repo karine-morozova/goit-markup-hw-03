@@ -3,7 +3,9 @@
     --primary-title-color: #212121;
     --primary-text-color: color: #757575;
     --accent-color: #2196F3;
-    --primary-white-color: #ffffff
+    --primary-white-color: #ffffff;
+    --secondary-bg-color: #F5F4FA;
+    
 }
 body {
     margin: 0;
@@ -43,6 +45,7 @@ body {
 .main-nav {
     display: flex;
     align-items: center;
+    height: 80px;
     
 }
 
@@ -159,6 +162,16 @@ text-decoration: none;
 }
 .feature-item:last-child {
     margin-right: 0;
+}
+.feature-icon {
+    width: 278px;
+height: 120px;
+
+border-radius: 4px;
+    background-color: var(--secondary-bg-color);
+}
+.feature-icon:hover, .feature-icon:focus {
+    background-color: var(--accent-color);
 }
 
 .section-title {
