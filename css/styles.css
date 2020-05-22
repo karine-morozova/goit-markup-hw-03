@@ -53,8 +53,9 @@ img {
 
 .main-nav {
     display: flex;
-    align-items: center;
-    height: 80px;
+    align-items: center; 
+    
+    height: 80px; 
     
 }
 
@@ -164,8 +165,12 @@ text-decoration: none;
 
 }
 /* Feature section */
+.section.features {
+    padding-bottom: 94px;
+    border-bottom: 1px solid #ECECEC;
+}
 
-.features {
+.features.list {
     display: flex;
 }
 .feature-item {
@@ -216,6 +221,9 @@ color: var(--primary-text-color);
 
 }
 /* Work section */
+.section.work {
+    padding-top: 94px;
+}
 
 .work.list {
     display: flex;
@@ -242,6 +250,9 @@ background-color: #757575;
 }
 
 /* Worker section */
+.section.worker {
+    background-color: var(--secondary-bg-color);
+}
 
 .worker.list {
     display: flex;
@@ -401,11 +412,10 @@ color: rgba(255, 255, 255, 0.4);
 /* PORTFOLIO */
 /* Portfolio filters */
 .section.projects {
-    padding-bottom: 94px;
+    padding-top: 94px;
+    border-top: 1px solid #ECECEC;
 }
-.header.portfolio {
-    padding-bottom: 47px;
-}
+
 /* Button */
   .btn {  
     
